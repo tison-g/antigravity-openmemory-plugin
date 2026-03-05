@@ -1,5 +1,7 @@
 # Antigravity OpenMemory Plugin
 
+[English](README.md) | [中文](README_CN.md)
+
 This plugin supercharges your Antigravity (Gemini Code Assistant) with cross-session, persistent memory. It automatically installs [OpenMemory](https://github.com/openmemory/openmemory), builds it, and links the required **Memory Management Skill** into your active Antigravity working directory.
 
 ## Features
