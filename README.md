@@ -10,7 +10,7 @@ This plugin supercharges your Antigravity (Gemini Code Assistant) with cross-ses
 - **Native MCP Support**: Configures OpenMemory strictly as an MCP `stdio` server directly supported by Antigravity—no background API services needed!
 
 ## Prerequisites
-- Windows OS (script currently written in PowerShell)
+- Windows, macOS, or Linux
 - [Node.js](https://nodejs.org/) (v18+) & NPM
 - Git
 - Antigravity extension configured
@@ -18,16 +18,22 @@ This plugin supercharges your Antigravity (Gemini Code Assistant) with cross-ses
 ## Installation
 
 1. **Clone this repository** anywhere on your system:
-   ```powershell
-   git clone https://github.com/yourusername/antigravity-openmemory-plugin
+   ```bash
+   git clone https://github.com/tison-g/antigravity-openmemory-plugin
    cd antigravity-openmemory-plugin
    ```
 
 2. **Run the Installer:**
-   Run the `install.ps1` script from within the folder where your target Antigravity project resides, or pass it explicitly.
+   Run the installation script from within the folder where your target Antigravity project resides, or pass the project path as an argument.
+
+   **For Windows (PowerShell):**
    ```powershell
-   # Typical usage (Run inside your project directory)
    & "path\to\antigravity-openmemory-plugin\install.ps1"
+   ```
+
+   **For Unix/macOS (Bash):**
+   ```bash
+   bash "path/to/antigravity-openmemory-plugin/install.sh"
    ```
    *What this does:*
    - Clones OpenMemory submodule.

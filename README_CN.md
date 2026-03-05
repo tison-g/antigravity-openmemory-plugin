@@ -8,7 +8,7 @@
 - **原生 MCP 支持**：配置为 Antigravity 官方支持的 MCP `stdio` 服务器模式——无需常驻后台 API 服务，随 Antigravity 启动自动运行。
 
 ## 前置要求
-- Windows 操作系统 (当前安装脚本基于 PowerShell)
+- Windows, macOS, 或 Linux 操作系统
 - [Node.js](https://nodejs.org/) (v18+) 及 NPM
 - Git
 - 已安装并配置好 Antigravity 插件
@@ -16,16 +16,22 @@
 ## 安装步骤
 
 1. **克隆本仓库** 到您系统的任意位置：
-   ```powershell
+   ```bash
    git clone https://github.com/tison-g/antigravity-openmemory-plugin
    cd antigravity-openmemory-plugin
    ```
 
-2. **运行安装更新脚本：**
-   在您的 **Antigravity 目标项目根目录** 下运行此脚本（或者传入路径）。
+2. **运行安装脚本：**
+   在您的 **Antigravity 目标项目根目录** 下运行对应的安装脚本。
+
+   **Windows (PowerShell):**
    ```powershell
-   # 典型用法 (在您的项目目录下执行)
    & "C:\path\to\antigravity-openmemory-plugin\install.ps1"
+   ```
+
+   **Unix/macOS (Bash):**
+   ```bash
+   bash "/path/to/antigravity-openmemory-plugin/install.sh"
    ```
    *该脚本会自动完成：*
    - 下载 OpenMemory 子源码。
